@@ -1,0 +1,37 @@
+
+<div id="data"></div>
+<script>
+const data={"location":
+{
+  "address":"this.agent_form.value.address",
+  "city":"this.agent_form.value.city",
+  "sector":"",
+  "description":"",
+  "loca":{
+    "state":"this.agent_form.value.state",
+  "longitude":"this.lon",
+  "latitude":"this.lat",
+  }
+}}
+console.log(JSON.stringify(data))
+const data2={
+"user":
+            {
+                "username":this.man_form.value.username,
+                "first_name":this.man_form.value.first_name,
+                "last_name":this.man_form.value.last_name,
+                "email":this.man_form.value.email,
+                "is_agent":false,
+                "is_manager":true,
+                "password":this.man_form.value.password,
+                "password2":this.man_form.value.password2
+            },
+      "gender":this.man_form.value.gender,
+      "date_of_birth": this.datePipe.transform(this.man_form.value.d_naissance,'yyyy-MM-dd'),
+      "phone_number":this.man_form.value.phone_number,
+      "created_at":this.datePipe.transform(new Date(), 'yyyy-MM-dd'),
+      "is_autorise":this.man_form.value.is_autorised,
+    }
+console.log(JSON.stringify(data))
+
+</script>
